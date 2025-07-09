@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { 
   BookOpen, 
   Gift, 
@@ -82,7 +80,7 @@ const QuickActions = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white" id='meu-alvo'>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -133,7 +131,7 @@ const QuickActions = () => {
         </div>
 
         {/* Call to action */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <div className="bg-gradient-to-r from-primary/5 to-blue-50 rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">
               💡 Não encontrou o que procura?
@@ -153,7 +151,7 @@ const QuickActions = () => {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

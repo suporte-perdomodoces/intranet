@@ -1,4 +1,3 @@
-// utils/playVideo.ts
 export function playVideoById(
   setIsPlaying: React.Dispatch<React.SetStateAction<boolean>>,
   videoId: string = "video"

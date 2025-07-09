@@ -1,0 +1,18 @@
+/* Scrollbar personalizada */
+.scrollbar-thin-only::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin-only::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin-only::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4); /* Ajuste para a cor desejada */
+  border-radius: 9999px;
+}
+
+.scrollbar-thin-only {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.4) transparent; /* Firefox */
+}

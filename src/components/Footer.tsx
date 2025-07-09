@@ -54,19 +54,19 @@ const Footer = () => {
                 <Heart className="h-6 w-6 text-pink-300 animate-pulse" />
               </div>
               <p className="text-blue-100 leading-relaxed text-base">
-                Criando momentos doces e especiais desde 1985. 
+                Criando momentos doces e especiais desde 2015. 
                 Somos uma família que acredita no poder dos afetos 
                 e na qualidade artesanal que conecta pessoas.
               </p>
               
               {/* Social Links */}
-              <div className="flex space-x-3">
+              <div className="flex flex-col space-x-3">
                 {socialLinks.map((social, index) => (
                   <Button 
                     key={index}
                     size="sm" 
                     variant="outline" 
-                    className="border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 rounded-lg"
+                    className="border-white/30 text-primary hover:bg-white transition-all duration-300 rounded-lg"
                   >
                     <social.icon className="h-4 w-4 mr-2" />
                     {social.name}

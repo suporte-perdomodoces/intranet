@@ -8,48 +8,114 @@ const ProductsSection = () => {
   const products = [
     {
       id: 1,
-      name: 'Brigadeiro Tradicional',
-      description: 'O clássico que conquistou corações há gerações',
-      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=400&fit=crop',
-      category: 'Clássicos',
+      name: 'Anápolis',
+      description: '',
+      image: '/images/stores/anapolis.jpeg',
+      category: 'Loja',
       rating: 5,
-      story: 'Receita da vovó, feita com amor desde 1985',
-      highlight: 'Mais vendido',
-      ingredients: ['Chocolate belga', 'Leite condensado', 'Manteiga']
+      story: '',
+      highlight: '',
+      ingredients: ['', '', '']
     },
     {
       id: 2,
-      name: 'Trufa de Chocolate Belga',
-      description: 'Sofisticação em cada mordida',
-      image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=400&fit=crop',
-      category: 'Premium',
+      name: 'Prime',
+      description: '',
+      image: '/images/stores/prime.jpeg',
+      category: 'Loja',
       rating: 5,
-      story: 'Chocolate importado, técnica artesanal',
-      highlight: 'Premium',
-      ingredients: ['Chocolate belga 70%', 'Creme fresco', 'Cacau em pó']
+      story: '',
+      highlight: '',
+      ingredients: ['', '', '']
     },
     {
       id: 3,
-      name: 'Beijinho de Coco',
-      description: 'Doce tradicional com toque especial',
-      image: 'https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=400&fit=crop',
-      category: 'Tradicionais',
+      name: 'Conjunto Nacional',
+      description: '',
+      image: '/images/stores/conjunto.jpeg',
+      category: 'Loja',
       rating: 5,
-      story: 'Coco fresco, preparado diariamente',
-      highlight: 'Tradicional',
-      ingredients: ['Coco fresco', 'Leite condensado', 'Cravo da índia']
+      story: '',
+      highlight: '',
+      ingredients: ['', '', '']
     },
     {
       id: 4,
-      name: 'Brownie de Nozes',
-      description: 'Cremoso, denso e irresistível',
-      image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=400&fit=crop',
-      category: 'Especiais',
+      name: 'Mané',
+      description: '',
+      image: '/images/stores/mane.jpeg',
+      category: '',
       rating: 5,
-      story: 'Receita exclusiva da nossa confeitaria',
-      highlight: 'Novo',
-      ingredients: ['Chocolate meio amargo', 'Nozes selecionadas', 'Ovos caipiras']
-    }
+      story: '',
+      highlight: '',
+      ingredients: ['', '', '']
+    },
+    {
+      id: 5,
+      name: 'Loja Matriz',
+      description: '',
+      image: '/images/stores/mane.jpeg',
+      category: '',
+      rating: 5,
+      story: '',
+      highlight: '',
+      ingredients: ['', '', '']
+    },
+    {
+      id: 6,
+      name: 'Drive Thru T4',
+      description: '',
+      image: '/images/stores/mane.jpeg',
+      category: '',
+      rating: 5,
+      story: '',
+      highlight: '',
+      ingredients: ['', '', '']
+    },
+    {
+      id: 7,
+      name: 'Itinerante',
+      description: '',
+      image: '/images/stores/mane.jpeg',
+      category: '',
+      rating: 5,
+      story: '',
+      highlight: '',
+      ingredients: ['', '', '']
+    },
+    {
+      id: 8,
+      name: 'Costa Águas Claras',
+      description: '',
+      image: '/images/stores/mane.jpeg',
+      category: '',
+      rating: 5,
+      story: '',
+      highlight: '',
+      ingredients: ['', '', '']
+    },
+    {
+      id: 9,
+      name: 'Fábrica',
+      description: '',
+      image: '/images/stores/mane.jpeg',
+      category: '',
+      rating: 5,
+      story: '',
+      highlight: '',
+      ingredients: ['', '', '']
+    },
+    {
+      id: 10,
+      name: 'Administrativo',
+      description: '',
+      image: '/images/stores/mane.jpeg',
+      category: '',
+      rating: 5,
+      story: '',
+      highlight: '',
+      ingredients: ['', '', '']
+    },
   ];
 
   const getCategoryColor = (category: string) => {
@@ -81,47 +147,46 @@ const ProductsSection = () => {
               <ChefHat className="h-8 w-8 text-primary" />
             </div>
             <h2 className="text-4xl font-bold text-gray-900">
-              Conheça Nossos Produtos
+              Conheça Nossas Unidades
             </h2>
           </div>
           <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
-            Cada doce conta uma história de tradição, carinho e qualidade artesanal. 
-            Orgulhe-se de fazer parte da criação dessas delícias que levam nossa marca pelo Brasil!
+            Cada pedacinho da nossa história importa!
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {products.map((product, index) => (
-            <Card 
+            <Card
               key={product.id}
               className="group cursor-pointer hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 bg-white border-0 overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-0">
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={product.image} 
+                  <img
+                    src={product.image}
                     alt={product.name}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
+
                   {/* Badges */}
-                  <div className="absolute top-4 left-4 flex flex-col space-y-2">
+                  {/* <div className="absolute top-4 left-4 flex flex-col space-y-2">
                     <Badge className={`${getCategoryColor(product.category)} font-medium shadow-md`}>
                       {product.category}
                     </Badge>
                     <div className={`${getHighlightColor(product.highlight)} text-white px-2 py-1 rounded-md text-xs font-bold shadow-md`}>
                       {product.highlight}
                     </div>
-                  </div>
-                  
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                  </div> */}
+
+                  {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
                     <Heart className="h-5 w-5 text-red-500 group-hover:scale-110 transition-transform duration-300" />
-                  </div>
+                  </div> */}
 
                   {/* Hover content */}
-                  <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                  {/* <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
                     <div className="bg-white/95 backdrop-blur-sm rounded-lg p-3">
                       <div className="text-xs text-gray-600 font-medium mb-1">Ingredientes principais:</div>
                       <div className="flex flex-wrap gap-1">
@@ -132,34 +197,34 @@ const ProductsSection = () => {
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
-                
+
                 <div className="p-6 space-y-4">
-                  <div className="flex items-center justify-between">
+                  {/* <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-1">
                       {[...Array(product.rating)].map((_, i) => (
                         <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
                       ))}
                     </div>
                     <Award className="h-5 w-5 text-primary" />
-                  </div>
-                  
+                  </div> */}
+
                   <div>
                     <h3 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-primary transition-colors">
                       {product.name}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                    {/* <p className="text-gray-600 text-sm leading-relaxed mb-3">
                       {product.description}
-                    </p>
+                    </p> */}
                   </div>
-                  
-                  <div className="border-t border-gray-100 pt-3">
+
+                  {/* <div className="border-t border-gray-100 pt-3">
                     <div className="flex items-center text-xs text-gray-500">
                       <Sparkles className="h-3 w-3 mr-1 text-primary" />
                       <span className="italic font-medium">{product.story}</span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </CardContent>
             </Card>
@@ -178,10 +243,10 @@ const ProductsSection = () => {
               </span>
             </div>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              Cada produto que criamos leva um pedacinho do seu trabalho, dedicação e amor. 
+              Cada produto que criamos leva um pedacinho do seu trabalho, dedicação e amor.
               Juntos, construímos momentos especiais para milhares de famílias brasileiras.
             </p>
-            <div className="flex items-center justify-center space-x-6 text-primary font-bold text-lg">
+            <div className="flex flex-col items-center justify-center sm:space-x-6 text-primary font-bold text-lg sm:flex-row">
               <span className="flex items-center">
                 <Sparkles className="h-5 w-5 mr-2" />
                 #OrgulhoPerdomo

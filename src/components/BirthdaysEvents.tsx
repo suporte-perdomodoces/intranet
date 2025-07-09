@@ -1,5 +1,5 @@
 
-import React from 'react';
+import '../style/styles.css';
 import { Calendar, Gift, Cake, Clock } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -7,8 +7,11 @@ import { Badge } from '@/components/ui/badge';
 const BirthdaysEvents = () => {
   const birthdays = [
     { name: 'Maria Silva', department: 'Produção', date: 'Hoje' },
-    { name: 'João Santos', department: 'Vendas', date: 'Amanhã' },
-    { name: 'Ana Costa', department: 'RH', date: '25/01' }
+    { name: 'João Victor', department: 'Vendas', date: 'Amanhã' },
+    { name: 'Ana Costa', department: 'RH', date: '25/01' },
+    { name: 'Pedro Paulo', department: 'TI', date: '30/01' },
+    { name: 'Eduardo Kauan', department: 'TI', date: '22/11' },
+    { name: 'Cassio', department: 'TI', date: '23/03' },
   ];
 
   const events = [
@@ -32,7 +35,21 @@ const BirthdaysEvents = () => {
       time: '18:00',
       type: 'Social',
       color: 'bg-green-500'
-    }
+    },
+    {
+      title: 'Confraternização Mensal',
+      date: '30/01',
+      time: '18:00',
+      type: 'Social',
+      color: 'bg-green-500'
+    },
+    {
+      title: 'Confraternização Mensal',
+      date: '30/01',
+      time: '18:00',
+      type: 'Social',
+      color: 'bg-green-500'
+    },
   ];
 
   return (
@@ -52,7 +69,7 @@ const BirthdaysEvents = () => {
                 </div>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-3 max-h-72 overflow-y-auto pr-2 scrollbar-thin-only">
                 {birthdays.map((person, index) => (
                   <div 
                     key={index}
@@ -95,7 +112,7 @@ const BirthdaysEvents = () => {
                 </div>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-3 max-h-72 overflow-y-auto pr-2 scrollbar-thin-only">
                 {events.map((event, index) => (
                   <div 
                     key={index}

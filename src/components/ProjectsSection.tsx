@@ -156,7 +156,7 @@ const ProjectsSection = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <div className="bg-primary text-white rounded-2xl p-8 shadow-lg">
             <h3 className="text-xl font-bold mb-4">
               💡 Tem uma ideia para melhorar a Perdomo?
@@ -172,7 +172,7 @@ const ProjectsSection = () => {
               Enviar Sugestão
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

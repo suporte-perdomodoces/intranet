@@ -110,18 +110,18 @@ const NewsSection = () => {
                         <Clock className="h-4 w-4 mr-1" />
                         {news[0].date}
                       </span>
-                      <span className="flex items-center">
+                      {/* <span className="flex items-center">
                         <Eye className="h-4 w-4 mr-1" />
                         {news[0].views}
                       </span>
                       <span className="flex items-center">
                         <MessageCircle className="h-4 w-4 mr-1" />
                         {news[0].comments}
-                      </span>
+                      </span> */}
                     </div>
-                    <Button variant="ghost" size="sm" className="text-white hover:bg-white/20">
+                    {/* <Button variant="ghost" size="sm" className="text-white hover:bg-white/20">
                       <Bookmark className="h-4 w-4" />
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </div>
@@ -180,7 +180,7 @@ const NewsSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">
               📢 Tem uma notícia para compartilhar?
@@ -192,7 +192,7 @@ const NewsSection = () => {
               Enviar Sugestão
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

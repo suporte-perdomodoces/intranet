@@ -40,9 +40,14 @@ const WelcomeSection = () => {
               que precisa para fazer parte da nossa doce jornada.
             </p>
 
-            <div className="flex items-center space-x-4 pt-6">
+            <div 
+            className="
+              flex flex-col items-center space-y-4
+              sm:space-x-4 sm:space-y-0 sm:flex-row pt-6"
+            >
               <Button
                 size="lg"
+                onClick={() => document.getElementById('meu-alvo').scrollIntoView({ behavior: 'smooth' })}
                 className="bg-white text-primary hover:bg-gray-50 font-semibold px-8 py-4 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
                 <Sparkles className="h-5 w-5 mr-2" />
