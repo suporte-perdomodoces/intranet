@@ -9,29 +9,29 @@ const NewsSection = () => {
   const news = [
     {
       id: 1,
-      title: 'Novo produto: Brigadeiro Gourmet de Pistache',
-      excerpt: 'Conheça nossa mais nova criação que promete conquistar paladares exigentes com sabor único e apresentação especial. Uma receita desenvolvida com muito carinho pela nossa equipe.',
-      category: 'Produtos',
-      date: '2 horas atrás',
+      title: 'Circuito do Sabor',
+      excerpt: 'Aconteceu a primeira edição do nosso Circuito do Sabor, onde falamos sobre o sabor da excelência para o atendimento aos clientes Perdomo! Esses momentos são, além de tudo, uma oportunidade de conexão entre as unidades e interação dos times.',
+      category: 'Treinamento',
+      date: '5 dias atrás',
       readTime: '3 min',
       views: 245,
       comments: 12,
-      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop',
+      image: 'https://i.ibb.co/Q3Tq3X9v/thumbnail-CIRCUITO-DO-SABOR.jpg',
       featured: true,
-      author: 'Equipe Produto'
+      author: 'Endomarketing Perdomo'
     },
     {
       id: 2,
-      title: 'Programa de Reconhecimento - Colaboradores Destaque',
-      excerpt: 'Celebramos os talentos que fazem a diferença na nossa equipe. Confira os homenageados deste mês e suas conquistas.',
-      category: 'RH',
+      title: 'Perdomo Master',
+      excerpt: 'Nossa trilha de treinamento para a liderança Perdomo acontece todo mês, e reúne conteúdos que agregam no dia a dia do nosso time de líderes.',
+      category: 'Treinamento',
       date: '1 dia atrás',
       readTime: '2 min',
       views: 189,
       comments: 8,
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop',
+      image: 'https://i.ibb.co/Gfvgg4Vy/PERDOMO-MASTER.jpg',
       featured: false,
-      author: 'RH Perdomo'
+      author: 'Endomarketing Perdomo'
     },
     {
       id: 3,
@@ -42,10 +42,10 @@ const NewsSection = () => {
       readTime: '4 min',
       views: 156,
       comments: 15,
-      image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+      image: 'https://i.ibb.co/Gfvgg4Vy/PERDOMO-MASTER.jpg',
       featured: false,
       author: 'Desenvolvimento'
-    }
+    },
   ];
 
   const getCategoryColor = (category: string) => {
@@ -63,7 +63,7 @@ const NewsSection = () => {
         <div className="flex items-center justify-between mb-16">
           <div className="max-w-2xl">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              O que está acontecendo na Perdomo
+              Aconteceu na Perdomo
             </h2>
             <p className="text-gray-600 text-xl leading-relaxed">
               Fique por dentro das últimas novidades, projetos e conquistas da nossa família. 

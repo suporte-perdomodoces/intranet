@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 
 const BirthdaysEvents = () => {
   const birthdays = [
-    { name: 'Maria Silva', department: 'Produção', date: 'Hoje' },
+    { name: 'teste', department: 'Produção', date: 'Hoje' },
     { name: 'João Victor', department: 'Vendas', date: 'Amanhã' },
     { name: 'Ana Costa', department: 'RH', date: '25/01' },
     { name: 'Pedro Paulo', department: 'TI', date: '30/01' },
